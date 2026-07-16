@@ -67,5 +67,3 @@ echo "zsh configuration complete!"
 # Reload zsh to apply changes
 echo "Reloading zsh..."
 exec zsh
-
-# Install additional applications
