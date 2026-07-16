@@ -27,7 +27,7 @@ $PACKAGE_MANAGER update -y
 
 # Install development tools
 echo "Installing development tools..."
-$PACKAGE_MANAGER install -y build-essential git curl wget vim
+$PACKAGE_MANAGER install -y git curl wget vim
 
 # Cleanup package cache
 echo "Cleaning up package cache..."
@@ -67,3 +67,14 @@ echo "zsh configuration complete!"
 # Reload zsh to apply changes
 echo "Reloading zsh..."
 exec zsh
+
+# Install Zed
+echo "Installing Zed editor..."
+curl -f https://zed.dev/install.sh | sh
+
+# Copy Zed configuration
+echo "Copying Zed configuration..."
+mkdir -p ~/.config/zed
+cp -r zed/settings.json ~/.config/zed/settings.json
+
+echo "Zed installation complete!"
