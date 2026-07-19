@@ -17,6 +17,6 @@ sudo bash prepare-linux-machine.sh
 Then copy the config files to their respective locations (`~/.config/zed/settings.json`, your Obsidian vault, ...).
 
 ## Planning to use
-- [] Wezterm
+- Wezterm
 
 > Personal repo, mainly used to back up and sync configs across machines.

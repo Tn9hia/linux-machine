@@ -23,7 +23,7 @@ fi
 
 # Update package repositories
 echo "Updating package repositories..."
-$PACKAGE_MANAGER update -y
+$PACKAGE_MANAGER update -y && $PACKAGE_MANAGER upgrade -y
 
 # Install development tools
 echo "Installing development tools..."
@@ -45,18 +45,22 @@ chsh -s $(which zsh)
 
 echo "zsh installation and configuration complete!"
 
-# Install Oh My Zsh
-echo "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Check if Oh My Zsh is already installed
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo "Installing Oh My Zsh..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  
+    echo "Oh My Zsh installation complete!"
+fi
 
-echo "Oh My Zsh installation complete!"
+# Check if zsh plugins are already installed
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ] || [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+    echo "Installing zsh plugins..."
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# Install zsh plugins
-echo "Installing zsh plugins..."
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-echo "zsh plugins installation complete!"
+    echo "zsh plugins installation complete!"
+fi
 
 # Configure zsh plugins in .zshrc
 echo "Configuring zsh plugins..."
@@ -77,4 +81,22 @@ echo "Copying Zed configuration..."
 mkdir -p ~/.config/zed
 cp -r zed/settings.json ~/.config/zed/settings.json
 
+# Install flameshot
+echo "Installing flameshot..."
+$PACKAGE_MANAGER install -y flameshot
+
+echo "flameshot installation complete!"
+
 echo "Zed installation complete!"
+
+# Setup alias config
+echo "Setting up alias configuration..."
+cat >> ~/.zshrc << 'EOF'
+alias ll='ls -la'
+alias gs='git status'
+alias gd='git diff'
+source <(kubectl completion zsh)
+alias k='kubectl'
+EOF
+
+echo "Alias configuration complete!"
