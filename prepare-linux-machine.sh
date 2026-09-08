@@ -49,7 +49,7 @@ echo "zsh installation and configuration complete!"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "Installing Oh My Zsh..."
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  
+
     echo "Oh My Zsh installation complete!"
 fi
 
@@ -96,7 +96,18 @@ alias ll='ls -la'
 alias gs='git status'
 alias gd='git diff'
 source <(kubectl completion zsh)
+source <(helm completion zsh)
 alias k='kubectl'
 EOF
 
 echo "Alias configuration complete!"
+
+echo "Setup complete!"
+echo "Some others tools you might need:"
+echo "  - kubectl"
+echo "  - helm"
+echo "  - podman"
+echo "  - python3-pip"
+echo "  - terraform"
+echo "  - wezterm"
+echo "  - k9s"

@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "center-image"
+  ],
+  "theme": "obsidian",
+  "translucency": true
+}
