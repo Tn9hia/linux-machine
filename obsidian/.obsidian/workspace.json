@@ -1,102 +1,27 @@
 {
   "main": {
-    "id": "2a8c08d03064d5a6",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "9f09aeeff516234c",
+        "id": "3b41e57aaafb8bf0",
         "type": "tabs",
         "children": [
           {
-            "id": "8dc20c6926cb00a0",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self-improve/2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "2026"
-            }
-          },
-          {
-            "id": "a8ece711f5d3d03f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/CKS/About CKS.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "About CKS"
-            }
-          },
-          {
-            "id": "a1293c4bb155b4be",
+            "id": "323f92792d4b0cf7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Career/GlobalTechJSC/Tasks/GitOps.md",
+                "file": "Tech/PKI/PKI/ejbca--crl-ocsp-services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitOps"
-            }
-          },
-          {
-            "id": "bd7c436515e730cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Career/GlobalTechJSC/Roadmap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Roadmap"
-            }
-          },
-          {
-            "id": "6ced22c09385e315",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kubernetes/Install k8s.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Install k8s"
-            }
-          },
-          {
-            "id": "b8ce7635fe585cae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Career/GlobalTechJSC/Roadmap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Roadmap"
+              "title": "ejbca--crl-ocsp-services"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -128,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "roadmap",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -144,7 +71,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -169,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/EC2/Overview.md",
+                "file": "note/research/vdi/lab/lab-09-Ansible-GitOps-Recover-VDI-Machine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +109,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Overview"
+              "title": "Backlinks"
             }
           },
           {
@@ -188,12 +118,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/EC2/Overview.md",
+                "file": "Cloud/VDI/Lab/Lab 9 - UAG Certificate Authentication with TPM Virtual Smart Card.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Overview"
+              "title": "Outgoing links"
             }
           },
           {
@@ -217,13 +147,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Career/GlobalTechJSC/Roadmap.md",
+                "file": "Tech/PKI/PKI/ejbca--crl-ocsp-services.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Roadmap"
+              "title": "Outline"
             }
           },
           {
@@ -238,6 +168,36 @@
               },
               "icon": "lucide-archive",
               "title": "All properties"
+            }
+          },
+          {
+            "id": "674e0f2a83e9c540",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          },
+          {
+            "id": "8a69b9ae4b178be7",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          },
+          {
+            "id": "5b6ae143026017db",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -259,59 +219,61 @@
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "realclaudian:Open Claudian": false,
+      "mermaid-flow:Mermaid Flow Editor": false
     }
   },
-  "active": "b8ce7635fe585cae",
+  "active": "323f92792d4b0cf7",
   "lastOpenFiles": [
-    "Cloud/VDI/Lab/Lab 3 - Unified Access Gateway.md",
-    "New-machine/Tools/linux-machine.md",
-    "New-machine/Attachments/Pasted image 20240908201752.png",
-    "New-machine/zed/config.md.md",
-    "New-machine/Tips.md",
-    "New-machine/Tools",
-    "New-machine/zed",
-    "New-machine/Attachments",
-    "New-machine",
-    "Cloud/VDI/Lab/Lab 2 - Horizon Desktop Pool (Golden Image and Instant Clone).md",
-    "Untitled.md",
-    "New Machine/zed/config.md.md",
-    "New Machine/Tips.md",
-    "Cloud/VDI/Lab/Lab 1 - Horizon Connection Server.md",
-    "New Machine/zed",
-    "Cloud/VDI/Lab/Lab 4 - User Environment Management (DEM and App Volumes).md",
-    "Cloud/VDI/Lab/Lab Planing.md",
-    "Cloud/VDI/Lab/CLAUDE.md",
-    "Career/GlobalTechJSC/Tasks/Tasks.md",
-    "New Machine/Tools/linux-machine.md",
-    "Kubernetes/Install k8s.md",
-    "Cloud/VDI/CLAUDE.md",
-    "Cloud/VDI/VDI.md",
-    "Cloud/VDI/horizon--connection-server.md",
-    "Cloud/VDI/horizon--unified-access-gateway.md",
-    "Cloud/VDI/horizon--desktop-pool-provisioning.md",
-    "Cloud/VDI/horizon--display-protocol.md",
-    "Cloud/VDI/horizon--user-environment-management.md",
-    "Cloud/VDI/vdi--storage-vsan-sizing.md",
-    "Cloud/VDI/vdi--networking-firewall-ports.md",
-    "Cloud/VDI/vdi--capacity-planning-licensing.md",
-    "Cloud/VDI/README.md",
-    "Cloud/VDI/Lab",
-    "Cloud/VDI",
-    "Career/GlobalTechJSC/Tasks",
-    "Cloud/FortiGate",
-    "Career/GlobalTechJSC/Kubernetes/Networking/Cilium",
-    "Career/GlobalTechJSC/Basic Services/NTP/Attachments/Pasted image 20260426165122.png",
-    "Career/GlobalTechJSC/Basic Services/NTP/Attachments/Pasted image 20260426164800.png",
-    "Career/GlobalTechJSC/Basic Services/NTP/Attachments/Pasted image 20260426164028.png",
-    "DevOps/IaC/Terraform/Attachments/Pasted image 20250207090507.png",
-    "AWS/SAA/Data & Analytics/Attachments/Pasted image 20260401002653.png",
-    "AWS/SAA/Data & Analytics/Attachments/Pasted image 20260401002628.png",
-    "AWS/SAA/Data & Analytics/Attachments/Pasted image 20260331011514.png",
-    "AWS/SAA/Data & Analytics/Attachments/Pasted image 20260331011440.png",
-    "AWS/SAA/Data & Analytics/Attachments/Pasted image 20260331011353.png",
-    "AWS/SAA/Untitled.canvas",
+    "Tech/PKI/PKI/ejbca--api-protocols.md",
+    "Tech/PKI/PKI/pki--x509-certificate.md",
+    "Tech/PKI/PKI/PKI--Runbook.md",
+    "Tech/PKI/EJBCA.md",
+    "Tech/PKI/PKI/ejbca--crypto-tokens.md",
+    "Tech/PKI/PKI/PKI--Index.md",
+    "Tech/PKI/PKI/pki--hsm-key-protection.md",
+    "Tech/PKI/PKI/pki--revocation-crl-ocsp.md",
+    "Tech/PKI/pki--asymmetric-crypto.md",
+    "Tech/PKI/ejbca--publishers-services-crl-ocsp.md",
+    "Tech/PKI/ejbca--ops-runbook.md",
+    "Tech/PKI/ejbca--end-entities-ra.md",
+    "Tech/PKI/ejbca--architecture-components.md",
+    "Tech/PKI/ejbca--api-cli.md",
+    "Tech/PKI/pki--cp-cps-policy.md",
+    "Tech/PKI/PKI/pki--enrollment-protocols.md",
+    "Tech/PKI/PKI/pki--certificate-lifecycle.md",
+    "Tech/PKI/PKI/pki--ca-hierarchy-trust-chain.md",
+    "Tech/PKI/PKI/ejbca--upgrade-backup.md",
+    "Tech/PKI/PKI/ejbca--rbac-admin-roles.md",
+    "Tech/PKI/PKI/ejbca--profiles-end-entities.md",
+    "Tech/PKI/PKI/ejbca--peer-systems-ra-va.md",
+    "Tech/PKI/PKI/ejbca--crl-ocsp-services.md",
+    "Tech/PKI/PKI/PKI.md",
+    "Tech/PKI/PKI/EJBCA.md",
+    "Tech/PKI/PKI",
+    "Network/Network.md",
+    "Kubernetes/k8s-provider/lab",
+    "Kubernetes/k8s-provider/security",
+    "Kubernetes/k8s-provider/fleet-ops",
+    "Kubernetes/k8s-provider/multi-tenancy",
+    "Kubernetes/k8s-provider/storage",
+    "Kubernetes/k8s-provider/networking",
+    "Kubernetes/k8s-provider/image-pipeline",
+    "Kubernetes/k8s-provider/infra-provider/capo",
+    "Kubernetes/k8s-provider/infra-provider/capc",
+    "teno/cloud/Attachments/Pasted image 20260919102536.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260919095343.png",
+    "teno/cloud/cloudstack/Attachments/Pasted image 20260918020545.png",
+    "teno/cloud/cloudstack/Attachments/Pasted image 20260918020517.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260918011527.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260916011306.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260916011221.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260916005436.png",
+    "teno/cloud/ceph/Attachments/Pasted image 20260915173737.png",
+    "Attachments/Pasted image 20260905012613.png",
     "Untitled.canvas",
+    "AWS/SAA/Untitled.canvas",
     "Untitled 1.canvas",
     "Cloud/Test Infrastructure/Untitled.canvas"
   ]

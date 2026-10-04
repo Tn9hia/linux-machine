@@ -7,129 +7,88 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ssh_connections": [
-    {
-      "host": "client",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/home/ubuntu/ansible"
-          ]
-        }
-      ]
-    }
-  ],
-  "diff_view_style": "unified",
-  "cli_default_open_behavior": "new_window",
-  "proxy": "",
   "outline_panel": {
-    "dock": "right",
+    "dock": "right"
   },
   "collaboration_panel": {
-    "button": false,
-    "dock": "left",
+    "dock": "right"
   },
   "git_panel": {
-    "tree_view": false,
-    "sort_by_path": true,
-    "dock": "left",
+    "dock": "right"
   },
   "agent_servers": {
+    "gemini": {
+      "type": "registry"
+    },
     "claude-acp": {
-      "favorite_config_option_values": {
-        "effort": [
-          "medium"
-        ]
-      },
-      "default_config_options": {
-        "fast": false,
-        "effort": "high",
-        "model": "opus",
-      },
-      "type": "registry",
-    },
-    "your_agent": {
-      "type": "custom",
-      "command": "path_to_executable",
-    },
+      "type": "registry"
+    }
   },
   "languages": {
     "YAML": {
-      "show_edit_predictions": true,
-    },
+      "show_edit_predictions": false
+    }
   },
   "tab_size": 2,
   "indent_guides": {
-    "background_coloring": "disabled",
+    "background_coloring": "disabled"
   },
   "tabs": {
     "git_status": false,
-    "file_icons": true,
+    "file_icons": true
   },
   "restore_on_startup": "last_workspace",
   "completions": {
-    "words": "fallback",
+    "words": "fallback"
   },
   "inlay_hints": {
     "enabled": true,
-    "show_background": false,
+    "show_background": false
   },
   "preview_tabs": {
-    "enable_preview_from_file_finder": false,
+    "enable_preview_from_file_finder": false
   },
   "title_bar": {
     "show_menus": false,
+    "show_branch_icon": false
   },
   "project_panel": {
-    "git_status_indicator": true,
-    "bold_folder_labels": true,
-    "dock": "left",
-    "button": true,
+    "dock": "right",
+    "button": true
   },
   "terminal": {
-    "option_as_meta": true,
-    "shell": "system",
     "cursor_shape": "block",
     "copy_on_select": true,
-    "blinking": "on",
+    "blinking": "terminal_controlled",
     "toolbar": {
-      "breadcrumbs": false,
+      "breadcrumbs": false
     },
-    "font_size": 11,
-    "font_family": ".ZedMono",
-    "default_width": 640,
-    "default_height": 320,
-    "line_height": "comfortable",
+    "font_family": ".ZedMono"
   },
   "edit_predictions": {
-    "ollama": {
-      "model": "qwen2.5-coder:7b-base"
-    },
     "provider": "zed",
-    "mode": "eager",
+    "mode": "eager"
   },
-  "hard_tabs": true,
+  "hard_tabs": false,
   "git": {
     "inline_blame": {
-      "show_commit_summary": true,
-    },
+      "show_commit_summary": true
+    }
   },
   "soft_wrap": "editor_width",
   "toolbar": {
-    "code_actions": true,
+    "code_actions": true
   },
   "ui_font_weight": 400.0,
   "disable_ai": false,
   "agent": {
-    "sidebar_side": "right",
-    "dock": "right",
-    "play_sound_when_agent_done": "always",
+    "dock": "left",
+    "play_sound_when_agent_done": true,
     "profiles": {
       "agent": {
         "default_model": {
           "provider": "google",
-          "model": "gemini-3-pro-preview",
+          "model": "gemini-3-pro-preview"
         },
         "name": "agent",
         "tools": {
@@ -147,44 +106,46 @@
           "diagnostics": true,
           "copy_path": true,
           "terminal": true,
-          "thinking": true,
+          "thinking": true
         },
         "enable_all_context_servers": false,
-        "context_servers": {},
-      },
+        "context_servers": {}
+      }
     },
     "default_model": {
       "effort": "high",
       "enable_thinking": true,
       "provider": "anthropic",
-      "model": "claude-opus-4-6-latest",
+      "model": "claude-opus-4-6-latest"
     },
     "inline_assistant_model": {
       "provider": "ollama",
-      "model": "codegemma:2b",
+      "model": "codegemma:2b"
     },
-    "model_parameters": [],
+    "model_parameters": []
   },
   "vim_mode": false,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false,
+    "metrics": false
   },
   "base_keymap": "VSCode",
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000,
-    },
+      "milliseconds": 1000
+    }
   },
   "file_types": {
-    "terraform": ["*.tf"],
+    "terraform": [
+      "*.tf"
+    ]
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Catppuccin Mocha",
   "ui_font_size": 15.0,
   "buffer_font_size": 13.0,
   "theme": {
     "mode": "dark",
-    "light": "One Dark",
-    "dark": "Catppuccin Macchiato - No Italics",
-  },
+    "light": "One Light",
+    "dark": "Ayu Mirage"
+  }
 }
